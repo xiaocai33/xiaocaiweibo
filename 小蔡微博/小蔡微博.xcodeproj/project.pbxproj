@@ -14,6 +14,8 @@
 		339C06A51E7F7F9C00DCDF39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06A41E7F7F9C00DCDF39 /* AppDelegate.m */; };
 		339C06A71E7F800000DCDF39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06A61E7F800000DCDF39 /* main.m */; };
 		339C06AA1E7FB5C900DCDF39 /* WBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06A91E7FB5C900DCDF39 /* WBMainViewController.m */; };
+		33CF0A1F1E8107930047EF3A /* WBMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A1E1E8107930047EF3A /* WBMainNavigationController.m */; };
+		33CF0A221E8108520047EF3A /* WBMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A211E8108520047EF3A /* WBMainTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		339C06A61E7F800000DCDF39 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		339C06A81E7FB5C900DCDF39 /* WBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainViewController.h; sourceTree = "<group>"; };
 		339C06A91E7FB5C900DCDF39 /* WBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainViewController.m; sourceTree = "<group>"; };
+		33CF0A1D1E8107930047EF3A /* WBMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainNavigationController.h; sourceTree = "<group>"; };
+		33CF0A1E1E8107930047EF3A /* WBMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainNavigationController.m; sourceTree = "<group>"; };
+		33CF0A201E8108520047EF3A /* WBMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainTabBarController.h; sourceTree = "<group>"; };
+		33CF0A211E8108520047EF3A /* WBMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 		339C069D1E7F7F7100DCDF39 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				33CF0A1C1E8107930047EF3A /* MainController(通用) */,
 				339C069E1E7F7F7100DCDF39 /* Main(主界面) */,
 			);
 			path = Class;
@@ -159,6 +166,17 @@
 				339C06A61E7F800000DCDF39 /* main.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		33CF0A1C1E8107930047EF3A /* MainController(通用) */ = {
+			isa = PBXGroup;
+			children = (
+				33CF0A1D1E8107930047EF3A /* WBMainNavigationController.h */,
+				33CF0A1E1E8107930047EF3A /* WBMainNavigationController.m */,
+				33CF0A201E8108520047EF3A /* WBMainTabBarController.h */,
+				33CF0A211E8108520047EF3A /* WBMainTabBarController.m */,
+			);
+			path = "MainController(通用)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +315,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				339C06A71E7F800000DCDF39 /* main.m in Sources */,
+				33CF0A1F1E8107930047EF3A /* WBMainNavigationController.m in Sources */,
 				339C06AA1E7FB5C900DCDF39 /* WBMainViewController.m in Sources */,
+				33CF0A221E8108520047EF3A /* WBMainTabBarController.m in Sources */,
 				339C06A51E7F7F9C00DCDF39 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +548,7 @@
 				339C06961E7F7D5A00DCDF39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		339C06971E7F7D5A00DCDF39 /* Build configuration list for PBXNativeTarget "小蔡微博Tests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +557,7 @@
 				339C06991E7F7D5A00DCDF39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		339C069A1E7F7D5A00DCDF39 /* Build configuration list for PBXNativeTarget "小蔡微博UITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +566,7 @@
 				339C069C1E7F7D5A00DCDF39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "WBMainViewController.h"
+//#import "WBMainViewController.h"
+#import "WBMainTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -22,18 +23,13 @@
     self.window = [[UIWindow alloc] init];
     
     //创建主控制器
-    WBMainViewController *mainViewController = [[WBMainViewController alloc] init];
+    WBMainTabBarController *mainTabBarController = [[WBMainTabBarController alloc] init];
     
     //设置窗口的主控制器为 WBMainViewController
-    self.window.rootViewController = mainViewController;
-    
-    //设置视图颜色
-    self.window.backgroundColor = [UIColor greenColor];
+    self.window.rootViewController = mainTabBarController;
     
     //显示视图
     [self.window makeKeyAndVisible];
-    
-    
     
     return YES;
 }
