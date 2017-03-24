@@ -13,9 +13,11 @@
 		339C06901E7F7D5A00DCDF39 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C068F1E7F7D5A00DCDF39 /* ____UITests.m */; };
 		339C06A51E7F7F9C00DCDF39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06A41E7F7F9C00DCDF39 /* AppDelegate.m */; };
 		339C06A71E7F800000DCDF39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06A61E7F800000DCDF39 /* main.m */; };
-		339C06AA1E7FB5C900DCDF39 /* WBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06A91E7FB5C900DCDF39 /* WBMainViewController.m */; };
-		33CF0A1F1E8107930047EF3A /* WBMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A1E1E8107930047EF3A /* WBMainNavigationController.m */; };
-		33CF0A221E8108520047EF3A /* WBMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A211E8108520047EF3A /* WBMainTabBarController.m */; };
+		33CF0A281E8125ED0047EF3A /* WBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A251E8125ED0047EF3A /* WBMainViewController.m */; };
+		33CF0A2F1E8126120047EF3A /* WBMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A2B1E8126120047EF3A /* WBMainNavigationController.m */; };
+		33CF0A301E8126120047EF3A /* WBMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A2D1E8126120047EF3A /* WBMainTabBarController.m */; };
+		33CF0A331E8126F30047EF3A /* WBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A321E8126F30047EF3A /* WBTabBar.m */; };
+		33CF0A371E8129240047EF3A /* UIView+UIView_Extent.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A361E8129240047EF3A /* UIView+UIView_Extent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,12 +51,16 @@
 		339C06A31E7F7F9C00DCDF39 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		339C06A41E7F7F9C00DCDF39 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		339C06A61E7F800000DCDF39 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		339C06A81E7FB5C900DCDF39 /* WBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainViewController.h; sourceTree = "<group>"; };
-		339C06A91E7FB5C900DCDF39 /* WBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainViewController.m; sourceTree = "<group>"; };
-		33CF0A1D1E8107930047EF3A /* WBMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainNavigationController.h; sourceTree = "<group>"; };
-		33CF0A1E1E8107930047EF3A /* WBMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainNavigationController.m; sourceTree = "<group>"; };
-		33CF0A201E8108520047EF3A /* WBMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainTabBarController.h; sourceTree = "<group>"; };
-		33CF0A211E8108520047EF3A /* WBMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainTabBarController.m; sourceTree = "<group>"; };
+		33CF0A241E8125ED0047EF3A /* WBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainViewController.h; sourceTree = "<group>"; };
+		33CF0A251E8125ED0047EF3A /* WBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainViewController.m; sourceTree = "<group>"; };
+		33CF0A2A1E8126120047EF3A /* WBMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainNavigationController.h; sourceTree = "<group>"; };
+		33CF0A2B1E8126120047EF3A /* WBMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainNavigationController.m; sourceTree = "<group>"; };
+		33CF0A2C1E8126120047EF3A /* WBMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainTabBarController.h; sourceTree = "<group>"; };
+		33CF0A2D1E8126120047EF3A /* WBMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainTabBarController.m; sourceTree = "<group>"; };
+		33CF0A311E8126F30047EF3A /* WBTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTabBar.h; sourceTree = "<group>"; };
+		33CF0A321E8126F30047EF3A /* WBTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBar.m; sourceTree = "<group>"; };
+		33CF0A351E8129240047EF3A /* UIView+UIView_Extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIView_Extent.h"; sourceTree = "<group>"; };
+		33CF0A361E8129240047EF3A /* UIView+UIView_Extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIView_Extent.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +158,9 @@
 		339C069E1E7F7F7100DCDF39 /* Main(主界面) */ = {
 			isa = PBXGroup;
 			children = (
-				339C06A81E7FB5C900DCDF39 /* WBMainViewController.h */,
-				339C06A91E7FB5C900DCDF39 /* WBMainViewController.m */,
+				33CF0A231E8125ED0047EF3A /* Controller */,
+				33CF0A261E8125ED0047EF3A /* Model */,
+				33CF0A271E8125ED0047EF3A /* View */,
 			);
 			path = "Main(主界面)";
 			sourceTree = "<group>";
@@ -161,6 +168,7 @@
 		339C06A21E7F7F9C00DCDF39 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				33CF0A341E8128E50047EF3A /* Category */,
 				339C06A31E7F7F9C00DCDF39 /* AppDelegate.h */,
 				339C06A41E7F7F9C00DCDF39 /* AppDelegate.m */,
 				339C06A61E7F800000DCDF39 /* main.m */,
@@ -171,12 +179,62 @@
 		33CF0A1C1E8107930047EF3A /* MainController(通用) */ = {
 			isa = PBXGroup;
 			children = (
-				33CF0A1D1E8107930047EF3A /* WBMainNavigationController.h */,
-				33CF0A1E1E8107930047EF3A /* WBMainNavigationController.m */,
-				33CF0A201E8108520047EF3A /* WBMainTabBarController.h */,
-				33CF0A211E8108520047EF3A /* WBMainTabBarController.m */,
+				33CF0A291E8126120047EF3A /* Controller */,
+				33CF0A2E1E8126120047EF3A /* View */,
 			);
 			path = "MainController(通用)";
+			sourceTree = "<group>";
+		};
+		33CF0A231E8125ED0047EF3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33CF0A241E8125ED0047EF3A /* WBMainViewController.h */,
+				33CF0A251E8125ED0047EF3A /* WBMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33CF0A261E8125ED0047EF3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33CF0A271E8125ED0047EF3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33CF0A291E8126120047EF3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33CF0A2A1E8126120047EF3A /* WBMainNavigationController.h */,
+				33CF0A2B1E8126120047EF3A /* WBMainNavigationController.m */,
+				33CF0A2C1E8126120047EF3A /* WBMainTabBarController.h */,
+				33CF0A2D1E8126120047EF3A /* WBMainTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33CF0A2E1E8126120047EF3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33CF0A311E8126F30047EF3A /* WBTabBar.h */,
+				33CF0A321E8126F30047EF3A /* WBTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33CF0A341E8128E50047EF3A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				33CF0A351E8129240047EF3A /* UIView+UIView_Extent.h */,
+				33CF0A361E8129240047EF3A /* UIView+UIView_Extent.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,10 +372,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33CF0A371E8129240047EF3A /* UIView+UIView_Extent.m in Sources */,
+				33CF0A331E8126F30047EF3A /* WBTabBar.m in Sources */,
+				33CF0A281E8125ED0047EF3A /* WBMainViewController.m in Sources */,
+				33CF0A2F1E8126120047EF3A /* WBMainNavigationController.m in Sources */,
 				339C06A71E7F800000DCDF39 /* main.m in Sources */,
-				33CF0A1F1E8107930047EF3A /* WBMainNavigationController.m in Sources */,
-				339C06AA1E7FB5C900DCDF39 /* WBMainViewController.m in Sources */,
-				33CF0A221E8108520047EF3A /* WBMainTabBarController.m in Sources */,
+				33CF0A301E8126120047EF3A /* WBMainTabBarController.m in Sources */,
 				339C06A51E7F7F9C00DCDF39 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

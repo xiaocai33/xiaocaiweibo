@@ -8,6 +8,7 @@
 
 #import "WBMainTabBarController.h"
 #import "WBMainNavigationController.h"
+#import "WBTabBar.h"
 
 @interface WBMainTabBarController ()
 
@@ -33,6 +34,11 @@
     UIViewController *c4 = [[UIViewController alloc] init];
     c4.view.backgroundColor = [UIColor purpleColor];
     [self addTabBarWithChildVc:c4 Title:@"我" Image:@"tabbar_profile" SelectImage:@"tabbar_profile_selected"];
+    
+    //自定义TabBar
+    WBTabBar *tabBar = [[WBTabBar alloc] init];
+    //KVC改变私有属性
+    [self setValue:tabBar forKeyPath:@"tabBar"];
 
 }
 
