@@ -9,8 +9,9 @@
 #import "WBMainTabBarController.h"
 #import "WBMainNavigationController.h"
 #import "WBTabBar.h"
+#import "WBAddViewController.h"
 
-@interface WBMainTabBarController ()
+@interface WBMainTabBarController () <WBTabBarDelegate>
 
 @end
 
@@ -37,6 +38,10 @@
     
     //自定义TabBar
     WBTabBar *tabBar = [[WBTabBar alloc] init];
+    
+    //设置代理
+    tabBar.delegate = self;
+    
     //KVC改变私有属性
     [self setValue:tabBar forKeyPath:@"tabBar"];
 
@@ -76,6 +81,19 @@
     //TabBar控制器添加按钮
     [self addChildViewController:nav];
     
+    
+}
+
+#pragma make -- WBTabBarDelegate
+- (void)tabBarClickAddButton:(WBTabBar *)tabBar{
+    
+    WBAddViewController *vc = [[WBAddViewController alloc] init];
+    vc.view.backgroundColor = [UIColor purpleColor];
+    
+    //包装导航栏
+    WBMainNavigationController *nav = [[WBMainNavigationController alloc] initWithRootViewController:vc];
+    
+    [self presentViewController:nav animated:YES completion:nil];
     
 }
 

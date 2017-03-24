@@ -30,9 +30,11 @@
         [addButton setImage:[UIImage imageNamed:@"tabbar_compose_icon_add_highlighted"] forState:UIControlStateHighlighted];
         
         addButton.size = addButton.currentBackgroundImage.size;
-        //addButton.width = self.width / 5;
-        //addButton.hight = self.hight;
+
         [self addSubview:addButton];
+        
+        //点击按钮
+        [addButton addTarget:self action:@selector(clickButton) forControlEvents:UIControlEventTouchUpInside];
         
         self.addButton = addButton;
         
@@ -40,13 +42,18 @@
     return self;
 }
 
+- (void)clickButton{
+    if ([self.delegate respondsToSelector:@selector(tabBarClickAddButton:)]) {
+        [self.delegate tabBarClickAddButton:self];
+    }
+}
+
 - (void)layoutSubviews{
     [super layoutSubviews];
     //设置加号按钮的中心点
-    self.addButton.centerX = self.width * 0.5;
+    self.addButton.centerX = self.width * 0.5;
     self.addButton.centerY = self.hight * 0.5;
-    //self.addButton.width = self.width / 5;
-    //self.addButton.hight = self.hight;
+    
     //所有按钮的宽度
     CGFloat btnWidth = self.width / 5;
     

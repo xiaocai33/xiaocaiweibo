@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331D7C281E85081F00F3BE1C /* WBAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D7C271E85081F00F3BE1C /* WBAddViewController.m */; };
 		339C06771E7F7D5A00DCDF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339C06761E7F7D5A00DCDF39 /* Assets.xcassets */; };
 		339C067A1E7F7D5A00DCDF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339C06781E7F7D5A00DCDF39 /* LaunchScreen.storyboard */; };
 		339C06851E7F7D5A00DCDF39 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06841E7F7D5A00DCDF39 /* ____Tests.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		331D7C261E85081F00F3BE1C /* WBAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAddViewController.h; sourceTree = "<group>"; };
+		331D7C271E85081F00F3BE1C /* WBAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAddViewController.m; sourceTree = "<group>"; };
 		339C06671E7F7D5A00DCDF39 /* 小蔡微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小蔡微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		339C06761E7F7D5A00DCDF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		339C06791E7F7D5A00DCDF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		331D7C251E8507D000F3BE1C /* Temp(临时界面) */ = {
+			isa = PBXGroup;
+			children = (
+				331D7C261E85081F00F3BE1C /* WBAddViewController.h */,
+				331D7C271E85081F00F3BE1C /* WBAddViewController.m */,
+			);
+			path = "Temp(临时界面)";
+			sourceTree = "<group>";
+		};
 		339C065E1E7F7D5900DCDF39 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +161,7 @@
 		339C069D1E7F7F7100DCDF39 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				331D7C251E8507D000F3BE1C /* Temp(临时界面) */,
 				33CF0A1C1E8107930047EF3A /* MainController(通用) */,
 				339C069E1E7F7F7100DCDF39 /* Main(主界面) */,
 			);
@@ -373,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33CF0A371E8129240047EF3A /* UIView+UIView_Extent.m in Sources */,
+				331D7C281E85081F00F3BE1C /* WBAddViewController.m in Sources */,
 				33CF0A331E8126F30047EF3A /* WBTabBar.m in Sources */,
 				33CF0A281E8125ED0047EF3A /* WBMainViewController.m in Sources */,
 				33CF0A2F1E8126120047EF3A /* WBMainNavigationController.m in Sources */,
