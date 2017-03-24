@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		331D7C281E85081F00F3BE1C /* WBAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D7C271E85081F00F3BE1C /* WBAddViewController.m */; };
+		331D7C3F1E850BC600F3BE1C /* WBHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D7C3E1E850BC600F3BE1C /* WBHomeTableViewController.m */; };
+		331D7C421E850FCA00F3BE1C /* WBMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D7C411E850FCA00F3BE1C /* WBMessageTableViewController.m */; };
+		331D7C451E8511A100F3BE1C /* WBDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D7C441E8511A100F3BE1C /* WBDiscoverTableViewController.m */; };
+		331D7C481E85126100F3BE1C /* WBMineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D7C471E85126100F3BE1C /* WBMineTableViewController.m */; };
 		339C06771E7F7D5A00DCDF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339C06761E7F7D5A00DCDF39 /* Assets.xcassets */; };
 		339C067A1E7F7D5A00DCDF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339C06781E7F7D5A00DCDF39 /* LaunchScreen.storyboard */; };
 		339C06851E7F7D5A00DCDF39 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06841E7F7D5A00DCDF39 /* ____Tests.m */; };
 		339C06901E7F7D5A00DCDF39 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C068F1E7F7D5A00DCDF39 /* ____UITests.m */; };
 		339C06A51E7F7F9C00DCDF39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06A41E7F7F9C00DCDF39 /* AppDelegate.m */; };
 		339C06A71E7F800000DCDF39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06A61E7F800000DCDF39 /* main.m */; };
-		33CF0A281E8125ED0047EF3A /* WBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A251E8125ED0047EF3A /* WBMainViewController.m */; };
 		33CF0A2F1E8126120047EF3A /* WBMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A2B1E8126120047EF3A /* WBMainNavigationController.m */; };
 		33CF0A301E8126120047EF3A /* WBMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A2D1E8126120047EF3A /* WBMainTabBarController.m */; };
 		33CF0A331E8126F30047EF3A /* WBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A321E8126F30047EF3A /* WBTabBar.m */; };
@@ -41,6 +44,14 @@
 /* Begin PBXFileReference section */
 		331D7C261E85081F00F3BE1C /* WBAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAddViewController.h; sourceTree = "<group>"; };
 		331D7C271E85081F00F3BE1C /* WBAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAddViewController.m; sourceTree = "<group>"; };
+		331D7C3D1E850BC600F3BE1C /* WBHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHomeTableViewController.h; sourceTree = "<group>"; };
+		331D7C3E1E850BC600F3BE1C /* WBHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHomeTableViewController.m; sourceTree = "<group>"; };
+		331D7C401E850FCA00F3BE1C /* WBMessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMessageTableViewController.h; sourceTree = "<group>"; };
+		331D7C411E850FCA00F3BE1C /* WBMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMessageTableViewController.m; sourceTree = "<group>"; };
+		331D7C431E8511A100F3BE1C /* WBDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDiscoverTableViewController.h; sourceTree = "<group>"; };
+		331D7C441E8511A100F3BE1C /* WBDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDiscoverTableViewController.m; sourceTree = "<group>"; };
+		331D7C461E85126100F3BE1C /* WBMineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMineTableViewController.h; sourceTree = "<group>"; };
+		331D7C471E85126100F3BE1C /* WBMineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMineTableViewController.m; sourceTree = "<group>"; };
 		339C06671E7F7D5A00DCDF39 /* 小蔡微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小蔡微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		339C06761E7F7D5A00DCDF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		339C06791E7F7D5A00DCDF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,8 +65,6 @@
 		339C06A31E7F7F9C00DCDF39 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		339C06A41E7F7F9C00DCDF39 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		339C06A61E7F800000DCDF39 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		33CF0A241E8125ED0047EF3A /* WBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainViewController.h; sourceTree = "<group>"; };
-		33CF0A251E8125ED0047EF3A /* WBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainViewController.m; sourceTree = "<group>"; };
 		33CF0A2A1E8126120047EF3A /* WBMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainNavigationController.h; sourceTree = "<group>"; };
 		33CF0A2B1E8126120047EF3A /* WBMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainNavigationController.m; sourceTree = "<group>"; };
 		33CF0A2C1E8126120047EF3A /* WBMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainTabBarController.h; sourceTree = "<group>"; };
@@ -98,6 +107,145 @@
 				331D7C271E85081F00F3BE1C /* WBAddViewController.m */,
 			);
 			path = "Temp(临时界面)";
+			sourceTree = "<group>";
+		};
+		331D7C291E850B5F00F3BE1C /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				331D7C2A1E850B5F00F3BE1C /* Controller */,
+				331D7C2B1E850B5F00F3BE1C /* Model */,
+				331D7C2C1E850B5F00F3BE1C /* View */,
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		331D7C2A1E850B5F00F3BE1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				331D7C431E8511A100F3BE1C /* WBDiscoverTableViewController.h */,
+				331D7C441E8511A100F3BE1C /* WBDiscoverTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		331D7C2B1E850B5F00F3BE1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		331D7C2C1E850B5F00F3BE1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		331D7C2D1E850B6600F3BE1C /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				331D7C2E1E850B6600F3BE1C /* Controller */,
+				331D7C311E850B6600F3BE1C /* Model */,
+				331D7C321E850B6600F3BE1C /* View */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		331D7C2E1E850B6600F3BE1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				331D7C3D1E850BC600F3BE1C /* WBHomeTableViewController.h */,
+				331D7C3E1E850BC600F3BE1C /* WBHomeTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		331D7C311E850B6600F3BE1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		331D7C321E850B6600F3BE1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		331D7C341E850B6D00F3BE1C /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				331D7C351E850B6D00F3BE1C /* Controller */,
+				331D7C361E850B6D00F3BE1C /* Model */,
+				331D7C371E850B6D00F3BE1C /* View */,
+			);
+			path = "Message(消息)";
+			sourceTree = "<group>";
+		};
+		331D7C351E850B6D00F3BE1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				331D7C401E850FCA00F3BE1C /* WBMessageTableViewController.h */,
+				331D7C411E850FCA00F3BE1C /* WBMessageTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		331D7C361E850B6D00F3BE1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		331D7C371E850B6D00F3BE1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		331D7C381E850B7400F3BE1C /* Mine(我) */ = {
+			isa = PBXGroup;
+			children = (
+				331D7C391E850B7400F3BE1C /* Controller */,
+				331D7C3A1E850B7400F3BE1C /* Model */,
+				331D7C3B1E850B7400F3BE1C /* View */,
+			);
+			path = "Mine(我)";
+			sourceTree = "<group>";
+		};
+		331D7C391E850B7400F3BE1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				331D7C461E85126100F3BE1C /* WBMineTableViewController.h */,
+				331D7C471E85126100F3BE1C /* WBMineTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		331D7C3A1E850B7400F3BE1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		331D7C3B1E850B7400F3BE1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		331D7C3C1E850B8500F3BE1C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		339C065E1E7F7D5900DCDF39 = {
@@ -161,26 +309,20 @@
 		339C069D1E7F7F7100DCDF39 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				331D7C381E850B7400F3BE1C /* Mine(我) */,
+				331D7C341E850B6D00F3BE1C /* Message(消息) */,
+				331D7C2D1E850B6600F3BE1C /* Home(首页) */,
+				331D7C291E850B5F00F3BE1C /* Discover(发现) */,
 				331D7C251E8507D000F3BE1C /* Temp(临时界面) */,
 				33CF0A1C1E8107930047EF3A /* MainController(通用) */,
-				339C069E1E7F7F7100DCDF39 /* Main(主界面) */,
 			);
 			path = Class;
-			sourceTree = "<group>";
-		};
-		339C069E1E7F7F7100DCDF39 /* Main(主界面) */ = {
-			isa = PBXGroup;
-			children = (
-				33CF0A231E8125ED0047EF3A /* Controller */,
-				33CF0A261E8125ED0047EF3A /* Model */,
-				33CF0A271E8125ED0047EF3A /* View */,
-			);
-			path = "Main(主界面)";
 			sourceTree = "<group>";
 		};
 		339C06A21E7F7F9C00DCDF39 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				331D7C3C1E850B8500F3BE1C /* Lib */,
 				33CF0A341E8128E50047EF3A /* Category */,
 				339C06A31E7F7F9C00DCDF39 /* AppDelegate.h */,
 				339C06A41E7F7F9C00DCDF39 /* AppDelegate.m */,
@@ -196,29 +338,6 @@
 				33CF0A2E1E8126120047EF3A /* View */,
 			);
 			path = "MainController(通用)";
-			sourceTree = "<group>";
-		};
-		33CF0A231E8125ED0047EF3A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				33CF0A241E8125ED0047EF3A /* WBMainViewController.h */,
-				33CF0A251E8125ED0047EF3A /* WBMainViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		33CF0A261E8125ED0047EF3A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		33CF0A271E8125ED0047EF3A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		33CF0A291E8126120047EF3A /* Controller */ = {
@@ -386,13 +505,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				33CF0A371E8129240047EF3A /* UIView+UIView_Extent.m in Sources */,
+				331D7C451E8511A100F3BE1C /* WBDiscoverTableViewController.m in Sources */,
 				331D7C281E85081F00F3BE1C /* WBAddViewController.m in Sources */,
 				33CF0A331E8126F30047EF3A /* WBTabBar.m in Sources */,
-				33CF0A281E8125ED0047EF3A /* WBMainViewController.m in Sources */,
 				33CF0A2F1E8126120047EF3A /* WBMainNavigationController.m in Sources */,
 				339C06A71E7F800000DCDF39 /* main.m in Sources */,
 				33CF0A301E8126120047EF3A /* WBMainTabBarController.m in Sources */,
 				339C06A51E7F7F9C00DCDF39 /* AppDelegate.m in Sources */,
+				331D7C481E85126100F3BE1C /* WBMineTableViewController.m in Sources */,
+				331D7C421E850FCA00F3BE1C /* WBMessageTableViewController.m in Sources */,
+				331D7C3F1E850BC600F3BE1C /* WBHomeTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

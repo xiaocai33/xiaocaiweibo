@@ -10,6 +10,10 @@
 #import "WBMainNavigationController.h"
 #import "WBTabBar.h"
 #import "WBAddViewController.h"
+#import "WBHomeTableViewController.h"
+#import "WBMessageTableViewController.h"
+#import "WBDiscoverTableViewController.h"
+#import "WBMineTableViewController.h"
 
 @interface WBMainTabBarController () <WBTabBarDelegate>
 
@@ -20,21 +24,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIViewController *c1 = [[UIViewController alloc] init];
-    c1.view.backgroundColor = [UIColor greenColor];
-    [self addTabBarWithChildVc:c1 Title:@"首页" Image:@"tabbar_home" SelectImage:@"tabbar_home_selected"];
+    //首页
+    WBHomeTableViewController *homeVc = [[WBHomeTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self addTabBarWithChildVc:homeVc Title:@"首页" Image:@"tabbar_home" SelectImage:@"tabbar_home_selected"];
     
-    UIViewController *c2 = [[UIViewController alloc] init];
-    c2.view.backgroundColor = [UIColor grayColor];
-    [self addTabBarWithChildVc:c2 Title:@"消息" Image:@"tabbar_message_center" SelectImage:@"tabbar_message_center_selected"];
+    //消息列表
+    WBMessageTableViewController *messageVc = [[WBMessageTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self addTabBarWithChildVc:messageVc Title:@"消息" Image:@"tabbar_message_center" SelectImage:@"tabbar_message_center_selected"];
     
-    UIViewController *c3 = [[UIViewController alloc] init];
-    c3.view.backgroundColor = [UIColor blueColor];
-    [self addTabBarWithChildVc:c3 Title:@"发现" Image:@"tabbar_discover" SelectImage:@"tabbar_discover_selected"];
+    //发现
+    WBDiscoverTableViewController *discoverVc = [[WBDiscoverTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self addTabBarWithChildVc:discoverVc Title:@"发现" Image:@"tabbar_discover" SelectImage:@"tabbar_discover_selected"];
     
-    UIViewController *c4 = [[UIViewController alloc] init];
-    c4.view.backgroundColor = [UIColor purpleColor];
-    [self addTabBarWithChildVc:c4 Title:@"我" Image:@"tabbar_profile" SelectImage:@"tabbar_profile_selected"];
+    //个人列表
+    WBMineTableViewController *mineVc = [[WBMineTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self addTabBarWithChildVc:mineVc Title:@"我" Image:@"tabbar_profile" SelectImage:@"tabbar_profile_selected"];
     
     //自定义TabBar
     WBTabBar *tabBar = [[WBTabBar alloc] init];

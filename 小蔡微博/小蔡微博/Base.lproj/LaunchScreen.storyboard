@@ -21,16 +21,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="ktd-9c-vZc">
-                                <rect key="frame" x="77" y="229" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="ktd-9c-vZc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ktd-9c-vZc" secondAttribute="trailing" constant="58" id="29U-S6-PwM"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ktd-9c-vZc" secondAttribute="bottom" constant="310" id="ADI-Ff-XGZ"/>
-                            <constraint firstItem="ktd-9c-vZc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="77" id="OAr-Ka-bhV"/>
-                            <constraint firstItem="ktd-9c-vZc" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="209" id="OV7-in-rXa"/>
+                            <constraint firstItem="ktd-9c-vZc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="AOD-LU-uka"/>
+                            <constraint firstItem="ktd-9c-vZc" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="AmT-aE-jVT"/>
+                            <constraint firstAttribute="trailing" secondItem="ktd-9c-vZc" secondAttribute="trailing" id="B1o-p2-8Bt"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ktd-9c-vZc" secondAttribute="bottom" id="O17-fN-IV4"/>
+                            <constraint firstAttribute="trailing" secondItem="ktd-9c-vZc" secondAttribute="trailing" id="tdF-Nh-LzU"/>
                         </constraints>
                     </view>
                 </viewController>
