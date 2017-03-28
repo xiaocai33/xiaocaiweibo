@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 //#import "WBMainViewController.h"
 #import "WBMainTabBarController.h"
+#import "WBOAuthViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,10 +24,12 @@
     self.window = [[UIWindow alloc] init];
     
     //创建主控制器
-    WBMainTabBarController *mainTabBarController = [[WBMainTabBarController alloc] init];
+    //WBMainTabBarController *mainTabBarController = [[WBMainTabBarController alloc] init];
+    
+    WBOAuthViewController *OAuthVc = [[WBOAuthViewController alloc] init];
     
     //设置窗口的主控制器为 WBMainViewController
-    self.window.rootViewController = mainTabBarController;
+    self.window.rootViewController = OAuthVc;
     
     //显示视图
     [self.window makeKeyAndVisible];
