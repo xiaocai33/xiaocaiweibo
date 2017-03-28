@@ -12,6 +12,8 @@
 		331D7C421E850FCA00F3BE1C /* WBMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D7C411E850FCA00F3BE1C /* WBMessageTableViewController.m */; };
 		331D7C451E8511A100F3BE1C /* WBDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D7C441E8511A100F3BE1C /* WBDiscoverTableViewController.m */; };
 		331D7C481E85126100F3BE1C /* WBMineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D7C471E85126100F3BE1C /* WBMineTableViewController.m */; };
+		331D7C4B1E8515D100F3BE1C /* UIBarButtonItem+Extent.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D7C4A1E8515D100F3BE1C /* UIBarButtonItem+Extent.m */; };
+		331D7C4E1E85219600F3BE1C /* WBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D7C4D1E85219600F3BE1C /* WBButton.m */; };
 		339C06771E7F7D5A00DCDF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339C06761E7F7D5A00DCDF39 /* Assets.xcassets */; };
 		339C067A1E7F7D5A00DCDF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339C06781E7F7D5A00DCDF39 /* LaunchScreen.storyboard */; };
 		339C06851E7F7D5A00DCDF39 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06841E7F7D5A00DCDF39 /* ____Tests.m */; };
@@ -52,6 +54,10 @@
 		331D7C441E8511A100F3BE1C /* WBDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDiscoverTableViewController.m; sourceTree = "<group>"; };
 		331D7C461E85126100F3BE1C /* WBMineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMineTableViewController.h; sourceTree = "<group>"; };
 		331D7C471E85126100F3BE1C /* WBMineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMineTableViewController.m; sourceTree = "<group>"; };
+		331D7C491E8515D100F3BE1C /* UIBarButtonItem+Extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extent.h"; sourceTree = "<group>"; };
+		331D7C4A1E8515D100F3BE1C /* UIBarButtonItem+Extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extent.m"; sourceTree = "<group>"; };
+		331D7C4C1E85219600F3BE1C /* WBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBButton.h; sourceTree = "<group>"; };
+		331D7C4D1E85219600F3BE1C /* WBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBButton.m; sourceTree = "<group>"; };
 		339C06671E7F7D5A00DCDF39 /* 小蔡微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小蔡微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		339C06761E7F7D5A00DCDF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		339C06791E7F7D5A00DCDF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -171,6 +177,8 @@
 		331D7C321E850B6600F3BE1C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				331D7C4C1E85219600F3BE1C /* WBButton.h */,
+				331D7C4D1E85219600F3BE1C /* WBButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -365,6 +373,8 @@
 			children = (
 				33CF0A351E8129240047EF3A /* UIView+UIView_Extent.h */,
 				33CF0A361E8129240047EF3A /* UIView+UIView_Extent.m */,
+				331D7C491E8515D100F3BE1C /* UIBarButtonItem+Extent.h */,
+				331D7C4A1E8515D100F3BE1C /* UIBarButtonItem+Extent.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -507,11 +517,13 @@
 				33CF0A371E8129240047EF3A /* UIView+UIView_Extent.m in Sources */,
 				331D7C451E8511A100F3BE1C /* WBDiscoverTableViewController.m in Sources */,
 				331D7C281E85081F00F3BE1C /* WBAddViewController.m in Sources */,
+				331D7C4E1E85219600F3BE1C /* WBButton.m in Sources */,
 				33CF0A331E8126F30047EF3A /* WBTabBar.m in Sources */,
 				33CF0A2F1E8126120047EF3A /* WBMainNavigationController.m in Sources */,
 				339C06A71E7F800000DCDF39 /* main.m in Sources */,
 				33CF0A301E8126120047EF3A /* WBMainTabBarController.m in Sources */,
 				339C06A51E7F7F9C00DCDF39 /* AppDelegate.m in Sources */,
+				331D7C4B1E8515D100F3BE1C /* UIBarButtonItem+Extent.m in Sources */,
 				331D7C481E85126100F3BE1C /* WBMineTableViewController.m in Sources */,
 				331D7C421E850FCA00F3BE1C /* WBMessageTableViewController.m in Sources */,
 				331D7C3F1E850BC600F3BE1C /* WBHomeTableViewController.m in Sources */,

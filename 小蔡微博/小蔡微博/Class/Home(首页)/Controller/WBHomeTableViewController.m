@@ -7,23 +7,38 @@
 //
 
 #import "WBHomeTableViewController.h"
+#import "UIBarButtonItem+Extent.h"
+#import "UIView+UIView_Extent.h"
+#import "WBButton.h"
 
 @interface WBHomeTableViewController ()
 
-@property (nonatomic, assign) CGFloat index;
-
 @end
 
+
 @implementation WBHomeTableViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    //设置导航栏右侧的按钮
+    //self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navigationbar_pop"] style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonClcik)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem initWithImage:@"navigationbar_pop" highltImage:@"navigationbar_pop_highlighted" target:self action:@selector(rightBarButtonClick)];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //设置导航栏左侧的按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImage:@"navigationbar_friendsearch" highltImage:@"navigationbar_friendsearch_highlighted" target:self action:@selector(leftBarButtonClick)];
+    
+    //设置中间按钮
+    WBButton *btn = [WBButton buttonWithTitle:@"首页" upImage:@"navigationbar_arrow_up" downImage:@"navigationbar_arrow_down"];
+    //按钮设置文字要用setTitle设置在那种状态下的文字显示,不能用titleLabel.text设置
+//    [btn setTitle:@"首页" forState:UIControlStateNormal];
+//    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    btn.size = CGSizeMake(50, 50);
+//    [btn setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
+    
+    self.navigationItem.titleView = btn;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,8 +46,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+- (void)rightBarButtonClick{
+    NSLog(@"rightBarButtonClick");
+}
 
+- (void)leftBarButtonClick{
+    NSLog(@"leftBarButtonClick");
+}
+
+- (void)homeBtnClick{
+    NSLog(@"homeButtonClick");
+}
+
+#pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 20;
 }
