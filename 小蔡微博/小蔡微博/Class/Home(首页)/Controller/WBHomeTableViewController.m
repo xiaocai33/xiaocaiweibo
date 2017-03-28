@@ -10,8 +10,11 @@
 #import "UIBarButtonItem+Extent.h"
 #import "UIView+UIView_Extent.h"
 #import "WBButton.h"
+#import "WBDropViewController.h"
+#import "WBDropView.h"
+#import "UIView+UIView_Extent.h"
 
-@interface WBHomeTableViewController ()
+@interface WBHomeTableViewController () <WBDropViewDelegate>
 
 @end
 
@@ -36,7 +39,7 @@
 //    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 //    btn.size = CGSizeMake(50, 50);
 //    [btn setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
-    
+    [btn addTarget:self action:@selector(titleBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.titleView = btn;
     
 }
@@ -54,8 +57,18 @@
     NSLog(@"leftBarButtonClick");
 }
 
-- (void)homeBtnClick{
-    NSLog(@"homeButtonClick");
+- (void)titleBtnClick:(WBButton *)btn{
+    //NSLog(@"titleButtonClick");
+    WBDropViewController *dropVc = [[WBDropViewController alloc] init];
+    dropVc.view.width = 150;
+    dropVc.view.hight = 44 * 3;
+    
+    
+    WBDropView *dropView = [[WBDropView alloc] init];
+    dropView.contentVc = dropVc;
+    dropView.delegate = self;
+    
+    [dropView showMeauFrom:btn];
 }
 
 #pragma mark - Table view data source
@@ -76,49 +89,15 @@
     return cell;
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma mark - WBDropViewDelegate
+- (void)dropdownMenuDidShow:(WBDropView *)menu{
+    WBButton *btn = (WBButton *)self.navigationItem.titleView;
+    btn.selected = YES;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (void)dropdownMenuDidDismiss:(WBDropView *)menu{
+    WBButton *btn = (WBButton *)self.navigationItem.titleView;
+    btn.selected = NO;
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -24,6 +24,8 @@
 		33CF0A301E8126120047EF3A /* WBMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A2D1E8126120047EF3A /* WBMainTabBarController.m */; };
 		33CF0A331E8126F30047EF3A /* WBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A321E8126F30047EF3A /* WBTabBar.m */; };
 		33CF0A371E8129240047EF3A /* UIView+UIView_Extent.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A361E8129240047EF3A /* UIView+UIView_Extent.m */; };
+		33F555B11E89F966009A4358 /* WBDropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F555B01E89F966009A4358 /* WBDropViewController.m */; };
+		33F555B41E89FBBC009A4358 /* WBDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F555B31E89FBBC009A4358 /* WBDropView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		33CF0A321E8126F30047EF3A /* WBTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBar.m; sourceTree = "<group>"; };
 		33CF0A351E8129240047EF3A /* UIView+UIView_Extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIView_Extent.h"; sourceTree = "<group>"; };
 		33CF0A361E8129240047EF3A /* UIView+UIView_Extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIView_Extent.m"; sourceTree = "<group>"; };
+		33F555AF1E89F966009A4358 /* WBDropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDropViewController.h; sourceTree = "<group>"; };
+		33F555B01E89F966009A4358 /* WBDropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDropViewController.m; sourceTree = "<group>"; };
+		33F555B21E89FBBC009A4358 /* WBDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDropView.h; sourceTree = "<group>"; };
+		33F555B31E89FBBC009A4358 /* WBDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDropView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +185,10 @@
 			children = (
 				331D7C4C1E85219600F3BE1C /* WBButton.h */,
 				331D7C4D1E85219600F3BE1C /* WBButton.m */,
+				33F555AF1E89F966009A4358 /* WBDropViewController.h */,
+				33F555B01E89F966009A4358 /* WBDropViewController.m */,
+				33F555B21E89FBBC009A4358 /* WBDropView.h */,
+				33F555B31E89FBBC009A4358 /* WBDropView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -514,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F555B11E89F966009A4358 /* WBDropViewController.m in Sources */,
 				33CF0A371E8129240047EF3A /* UIView+UIView_Extent.m in Sources */,
 				331D7C451E8511A100F3BE1C /* WBDiscoverTableViewController.m in Sources */,
 				331D7C281E85081F00F3BE1C /* WBAddViewController.m in Sources */,
@@ -526,6 +537,7 @@
 				331D7C4B1E8515D100F3BE1C /* UIBarButtonItem+Extent.m in Sources */,
 				331D7C481E85126100F3BE1C /* WBMineTableViewController.m in Sources */,
 				331D7C421E850FCA00F3BE1C /* WBMessageTableViewController.m in Sources */,
+				33F555B41E89FBBC009A4358 /* WBDropView.m in Sources */,
 				331D7C3F1E850BC600F3BE1C /* WBHomeTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
