@@ -10,6 +10,8 @@
 #import "MBProgressHUD+MJ.h"
 #import "AFNetworking.h"
 #import "UIWindow+extent.h"
+#import "WBAccount.h"
+#import "WBAccountTool.h"
 
 @interface WBOAuthViewController () <UIWebViewDelegate>
 
@@ -67,7 +69,7 @@
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
-    [MBProgressHUD showError:@"加载失败"];
+    //[MBProgressHUD showError:@"加载失败"];
     NSLog(@"加载失败...");
 }
 
@@ -104,9 +106,12 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //验证成功
         [MBProgressHUD hideHUD];
-        NSLog(@"验证成功");
+       // NSLog(@"验证成功");
+       // NSLog(@"%@", responseObject);
         
-        //存储验证信息
+        // 将返回的账号字典数据 --> 模型，存进沙盒
+        WBAccount *account = [WBAccount accountInitWithDict:responseObject];
+        [WBAccountTool saveAccount:account];
         
         //跳转控制器
         UIWindow *window = [UIApplication sharedApplication].keyWindow;

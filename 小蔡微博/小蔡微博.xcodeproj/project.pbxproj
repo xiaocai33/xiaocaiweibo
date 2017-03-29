@@ -26,6 +26,8 @@
 		339774221E8A4BF000581D45 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3397741F1E8A4BF000581D45 /* MBProgressHUD.m */; };
 		339774251E8A50AB00581D45 /* UIWindow+extent.m in Sources */ = {isa = PBXBuildFile; fileRef = 339774241E8A50AB00581D45 /* UIWindow+extent.m */; };
 		3397742A1E8A599F00581D45 /* WBNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339774291E8A599F00581D45 /* WBNewFeatureController.m */; };
+		339AAEBB1E8B6316003FE6DD /* WBAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 339AAEBA1E8B6316003FE6DD /* WBAccountTool.m */; };
+		339AAEBF1E8B6373003FE6DD /* WBAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 339AAEBE1E8B6373003FE6DD /* WBAccount.m */; };
 		339C06771E7F7D5A00DCDF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339C06761E7F7D5A00DCDF39 /* Assets.xcassets */; };
 		339C067A1E7F7D5A00DCDF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339C06781E7F7D5A00DCDF39 /* LaunchScreen.storyboard */; };
 		339C06851E7F7D5A00DCDF39 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06841E7F7D5A00DCDF39 /* ____Tests.m */; };
@@ -96,6 +98,10 @@
 		339774241E8A50AB00581D45 /* UIWindow+extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+extent.m"; sourceTree = "<group>"; };
 		339774281E8A599F00581D45 /* WBNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNewFeatureController.h; sourceTree = "<group>"; };
 		339774291E8A599F00581D45 /* WBNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBNewFeatureController.m; sourceTree = "<group>"; };
+		339AAEB91E8B6316003FE6DD /* WBAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAccountTool.h; sourceTree = "<group>"; };
+		339AAEBA1E8B6316003FE6DD /* WBAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAccountTool.m; sourceTree = "<group>"; };
+		339AAEBD1E8B6373003FE6DD /* WBAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAccount.h; sourceTree = "<group>"; };
+		339AAEBE1E8B6373003FE6DD /* WBAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAccount.m; sourceTree = "<group>"; };
 		339C06671E7F7D5A00DCDF39 /* 小蔡微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小蔡微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		339C06761E7F7D5A00DCDF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		339C06791E7F7D5A00DCDF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -307,6 +313,7 @@
 		339773FF1E8A3B5800581D45 /* OAuth(授权) */ = {
 			isa = PBXGroup;
 			children = (
+				339AAEBC1E8B632F003FE6DD /* Model */,
 				339774001E8A3B5800581D45 /* Controller */,
 				339774011E8A3B5800581D45 /* Tool */,
 				339774021E8A3B5800581D45 /* View */,
@@ -326,6 +333,8 @@
 		339774011E8A3B5800581D45 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				339AAEB91E8B6316003FE6DD /* WBAccountTool.h */,
+				339AAEBA1E8B6316003FE6DD /* WBAccountTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -384,6 +393,15 @@
 				339774291E8A599F00581D45 /* WBNewFeatureController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		339AAEBC1E8B632F003FE6DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				339AAEBD1E8B6373003FE6DD /* WBAccount.h */,
+				339AAEBE1E8B6373003FE6DD /* WBAccount.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		339C065E1E7F7D5900DCDF39 = {
@@ -669,10 +687,12 @@
 				339774191E8A4BE000581D45 /* AFURLSessionManager.m in Sources */,
 				331D7C481E85126100F3BE1C /* WBMineTableViewController.m in Sources */,
 				331D7C421E850FCA00F3BE1C /* WBMessageTableViewController.m in Sources */,
+				339AAEBF1E8B6373003FE6DD /* WBAccount.m in Sources */,
 				339774201E8A4BF000581D45 /* MBProgressHUD+MJ.m in Sources */,
 				33F555B41E89FBBC009A4358 /* WBDropView.m in Sources */,
 				339774141E8A4BE000581D45 /* AFHTTPSessionManager.m in Sources */,
 				339774181E8A4BE000581D45 /* AFURLResponseSerialization.m in Sources */,
+				339AAEBB1E8B6316003FE6DD /* WBAccountTool.m in Sources */,
 				339774251E8A50AB00581D45 /* UIWindow+extent.m in Sources */,
 				331D7C3F1E850BC600F3BE1C /* WBHomeTableViewController.m in Sources */,
 			);

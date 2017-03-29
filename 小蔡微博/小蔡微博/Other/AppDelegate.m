@@ -11,6 +11,9 @@
 #import "WBMainTabBarController.h"
 #import "WBOAuthViewController.h"
 #import "WBNewFeatureController.h"
+#import "WBAccountTool.h"
+#import "WBAccount.h"
+#import "UIWindow+extent.h"
 
 @interface AppDelegate ()
 
@@ -27,14 +30,21 @@
     //创建主控制器
     //WBMainTabBarController *mainTabBarController = [[WBMainTabBarController alloc] init];
     
-    //OAuth验证控制器
-    //WBOAuthViewController *OAuthVc = [[WBOAuthViewController alloc] init];
+    
     
     //新特性控制器
-    WBNewFeatureController *newFeatureVc = [[WBNewFeatureController alloc] init];
+    //WBNewFeatureController *newFeatureVc = [[WBNewFeatureController alloc] init];
     
-    //设置窗口的主控制器
-    self.window.rootViewController = newFeatureVc;
+    WBAccount *account = [WBAccountTool account];
+    if (account) {//以前验证登录过直接进入
+        //切换控制器
+        [self.window switchViewController];
+    }else{
+        //OAuth验证控制器
+        WBOAuthViewController *OAuthVc = [[WBOAuthViewController alloc] init];
+        //设置窗口的主控制器
+        self.window.rootViewController = OAuthVc;
+    }
     
     //显示视图
     [self.window makeKeyAndVisible];
