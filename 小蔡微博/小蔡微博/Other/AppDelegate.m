@@ -10,6 +10,7 @@
 //#import "WBMainViewController.h"
 #import "WBMainTabBarController.h"
 #import "WBOAuthViewController.h"
+#import "WBNewFeatureController.h"
 
 @interface AppDelegate ()
 
@@ -26,10 +27,14 @@
     //创建主控制器
     //WBMainTabBarController *mainTabBarController = [[WBMainTabBarController alloc] init];
     
-    WBOAuthViewController *OAuthVc = [[WBOAuthViewController alloc] init];
+    //OAuth验证控制器
+    //WBOAuthViewController *OAuthVc = [[WBOAuthViewController alloc] init];
     
-    //设置窗口的主控制器为 WBMainViewController
-    self.window.rootViewController = OAuthVc;
+    //新特性控制器
+    WBNewFeatureController *newFeatureVc = [[WBNewFeatureController alloc] init];
+    
+    //设置窗口的主控制器
+    self.window.rootViewController = newFeatureVc;
     
     //显示视图
     [self.window makeKeyAndVisible];

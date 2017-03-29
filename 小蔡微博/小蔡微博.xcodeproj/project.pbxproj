@@ -25,6 +25,7 @@
 		339774211E8A4BF000581D45 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3397741D1E8A4BEF00581D45 /* MBProgressHUD.bundle */; };
 		339774221E8A4BF000581D45 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3397741F1E8A4BF000581D45 /* MBProgressHUD.m */; };
 		339774251E8A50AB00581D45 /* UIWindow+extent.m in Sources */ = {isa = PBXBuildFile; fileRef = 339774241E8A50AB00581D45 /* UIWindow+extent.m */; };
+		3397742A1E8A599F00581D45 /* WBNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339774291E8A599F00581D45 /* WBNewFeatureController.m */; };
 		339C06771E7F7D5A00DCDF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339C06761E7F7D5A00DCDF39 /* Assets.xcassets */; };
 		339C067A1E7F7D5A00DCDF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339C06781E7F7D5A00DCDF39 /* LaunchScreen.storyboard */; };
 		339C06851E7F7D5A00DCDF39 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06841E7F7D5A00DCDF39 /* ____Tests.m */; };
@@ -93,6 +94,8 @@
 		3397741F1E8A4BF000581D45 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		339774231E8A50AB00581D45 /* UIWindow+extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+extent.h"; sourceTree = "<group>"; };
 		339774241E8A50AB00581D45 /* UIWindow+extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+extent.m"; sourceTree = "<group>"; };
+		339774281E8A599F00581D45 /* WBNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNewFeatureController.h; sourceTree = "<group>"; };
+		339774291E8A599F00581D45 /* WBNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBNewFeatureController.m; sourceTree = "<group>"; };
 		339C06671E7F7D5A00DCDF39 /* 小蔡微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小蔡微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		339C06761E7F7D5A00DCDF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		339C06791E7F7D5A00DCDF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -366,6 +369,23 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		339774261E8A596200581D45 /* newFeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				339774271E8A596200581D45 /* Controller */,
+			);
+			path = "newFeature(新特性)";
+			sourceTree = "<group>";
+		};
+		339774271E8A596200581D45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				339774281E8A599F00581D45 /* WBNewFeatureController.h */,
+				339774291E8A599F00581D45 /* WBNewFeatureController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		339C065E1E7F7D5900DCDF39 = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +447,7 @@
 		339C069D1E7F7F7100DCDF39 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				339774261E8A596200581D45 /* newFeature(新特性) */,
 				339773FF1E8A3B5800581D45 /* OAuth(授权) */,
 				331D7C381E850B7400F3BE1C /* Mine(我) */,
 				331D7C341E850B6D00F3BE1C /* Message(消息) */,
@@ -630,6 +651,7 @@
 			files = (
 				33F555B11E89F966009A4358 /* WBDropViewController.m in Sources */,
 				33CF0A371E8129240047EF3A /* UIView+UIView_Extent.m in Sources */,
+				3397742A1E8A599F00581D45 /* WBNewFeatureController.m in Sources */,
 				331D7C451E8511A100F3BE1C /* WBDiscoverTableViewController.m in Sources */,
 				331D7C281E85081F00F3BE1C /* WBAddViewController.m in Sources */,
 				331D7C4E1E85219600F3BE1C /* WBButton.m in Sources */,
