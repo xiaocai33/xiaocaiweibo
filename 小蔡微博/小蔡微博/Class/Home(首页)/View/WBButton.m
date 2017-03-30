@@ -39,7 +39,7 @@
                           };
     //计算标题的宽度
     CGFloat titleWidth = [btn.currentTitle boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingTruncatesLastVisibleLine attributes:dic context:nil].size.width;
- 
+    //NSLog(@"%f", titleWidth);
     //计算按钮长度
     btn.width = titleWidth + btn.currentImage.size.width;
     btn.hight = 30;

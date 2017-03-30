@@ -13,6 +13,10 @@
 #import "WBDropViewController.h"
 #import "WBDropView.h"
 #import "UIView+UIView_Extent.h"
+#import "AFNetworking.h"
+#import "WBAccountTool.h"
+#import "WBAccount.h"
+#import "WBUser.h"
 
 @interface WBHomeTableViewController () <WBDropViewDelegate>
 
@@ -25,6 +29,53 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //设置导航栏
+    [self setupNav];
+    
+    //获取用户昵称
+    [self getUserName];
+}
+
+/**
+ 设置用户昵称
+ */
+- (void)getUserName{
+    /*
+     https://api.weibo.com/2/users/show.json
+     access_token	false	string	采用OAuth授权方式为必填参数，其他授权方式不需要此参数，OAuth授权后获得。
+     uid	false	int64	需要查询的用户ID。
+     */
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    mgr.responseSerializer = [AFJSONResponseSerializer serializer];
+    
+    //从沙盒取数据
+    WBAccount *account = [WBAccountTool account];
+    
+    NSMutableDictionary *parm = [NSMutableDictionary dictionary];
+    parm[@"access_token"] = account.access_token;
+    parm[@"uid"] = account.uid;
+    
+    [mgr GET:@"https://api.weibo.com/2/users/show.json" parameters:parm progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        //NSLog(@"获取成功--%@", responseObject);
+        WBUser *user = [WBUser userInitDict:responseObject];
+        
+        UIButton *btn = (UIButton *)self.navigationItem.titleView;
+        [btn setTitle:user.screen_name forState:UIControlStateNormal];
+        
+        //将昵称存储到沙盒中
+        account.name = user.screen_name;
+        [WBAccountTool saveAccount:account];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"error--%@", error);
+    }];
+    
+}
+
+/**
+    设置导航栏
+ */
+- (void)setupNav{
     //设置导航栏右侧的按钮
     //self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navigationbar_pop"] style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonClcik)];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem initWithImage:@"navigationbar_pop" highltImage:@"navigationbar_pop_highlighted" target:self action:@selector(rightBarButtonClick)];
@@ -33,15 +84,15 @@
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImage:@"navigationbar_friendsearch" highltImage:@"navigationbar_friendsearch_highlighted" target:self action:@selector(leftBarButtonClick)];
     
     //设置中间按钮
-    WBButton *btn = [WBButton buttonWithTitle:@"首页" upImage:@"navigationbar_arrow_up" downImage:@"navigationbar_arrow_down"];
+    NSString *name = [WBAccountTool account].name;
+    WBButton *btn = [WBButton buttonWithTitle:name?name:@"首页" upImage:@"navigationbar_arrow_up" downImage:@"navigationbar_arrow_down"];
     //按钮设置文字要用setTitle设置在那种状态下的文字显示,不能用titleLabel.text设置
-//    [btn setTitle:@"首页" forState:UIControlStateNormal];
-//    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//    btn.size = CGSizeMake(50, 50);
-//    [btn setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
+    //    [btn setTitle:@"首页" forState:UIControlStateNormal];
+    //    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    //    btn.size = CGSizeMake(50, 50);
+    //    [btn setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(titleBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.titleView = btn;
-    
 }
 
 - (void)didReceiveMemoryWarning {

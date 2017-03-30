@@ -30,8 +30,15 @@
  *  string	当前授权用户的UID。
  */
 @property (nonatomic, copy) NSString *uid;
-
+/**
+ *  NSDate	创建时间。
+ */
 @property (nonatomic, strong) NSDate *create_time;
+
+/**
+ *  string	当前用户的name。
+ */
+@property (nonatomic, copy) NSString *name;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 + (instancetype)accountInitWithDict:(NSDictionary *)dict;
