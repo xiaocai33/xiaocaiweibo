@@ -35,6 +35,7 @@
 		339C06901E7F7D5A00DCDF39 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C068F1E7F7D5A00DCDF39 /* ____UITests.m */; };
 		339C06A51E7F7F9C00DCDF39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06A41E7F7F9C00DCDF39 /* AppDelegate.m */; };
 		339C06A71E7F800000DCDF39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C06A61E7F800000DCDF39 /* main.m */; };
+		33A5870A1E9CB7520003BE74 /* WBStatuse.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A587091E9CB7520003BE74 /* WBStatuse.m */; };
 		33B5A4741E8CAA9C00423EDE /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B5A4731E8CAA9C00423EDE /* Foundation+Log.m */; };
 		33CF0A2F1E8126120047EF3A /* WBMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A2B1E8126120047EF3A /* WBMainNavigationController.m */; };
 		33CF0A301E8126120047EF3A /* WBMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CF0A2D1E8126120047EF3A /* WBMainTabBarController.m */; };
@@ -119,6 +120,8 @@
 		339C06A31E7F7F9C00DCDF39 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		339C06A41E7F7F9C00DCDF39 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		339C06A61E7F800000DCDF39 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33A587081E9CB7520003BE74 /* WBStatuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBStatuse.h; sourceTree = "<group>"; };
+		33A587091E9CB7520003BE74 /* WBStatuse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBStatuse.m; sourceTree = "<group>"; };
 		33B5A4731E8CAA9C00423EDE /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		33CF0A2A1E8126120047EF3A /* WBMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMainNavigationController.h; sourceTree = "<group>"; };
 		33CF0A2B1E8126120047EF3A /* WBMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMainNavigationController.m; sourceTree = "<group>"; };
@@ -225,6 +228,8 @@
 			children = (
 				331A40BD1E8CFF0C00E5009E /* WBUser.h */,
 				331A40BE1E8CFF0C00E5009E /* WBUser.m */,
+				33A587081E9CB7520003BE74 /* WBStatuse.h */,
+				33A587091E9CB7520003BE74 /* WBStatuse.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -679,6 +684,7 @@
 				33CF0A371E8129240047EF3A /* UIView+UIView_Extent.m in Sources */,
 				3397742A1E8A599F00581D45 /* WBNewFeatureController.m in Sources */,
 				331D7C451E8511A100F3BE1C /* WBDiscoverTableViewController.m in Sources */,
+				33A5870A1E9CB7520003BE74 /* WBStatuse.m in Sources */,
 				331D7C281E85081F00F3BE1C /* WBAddViewController.m in Sources */,
 				331D7C4E1E85219600F3BE1C /* WBButton.m in Sources */,
 				33CF0A331E8126F30047EF3A /* WBTabBar.m in Sources */,
