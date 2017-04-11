@@ -13,6 +13,9 @@
 
 //@property (nonatomic, copy) NSString *created_at;
 
+/** int	整型的微博ID */
+@property (nonatomic, assign) int ID;
+
 /** string	字符串型的微博ID */
 @property (nonatomic, copy) NSString *idstr;
 
@@ -24,8 +27,8 @@
 /** WBUserModel	微博作者的用户信息字段 */
 @property (nonatomic, strong) WBUser *user;
 
-
-- (instancetype)initWithDict:(NSDictionary *)dict;
-+ (instancetype)statuseInitDict:(NSDictionary *)dict;
+//
+//- (instancetype)initWithDict:(NSDictionary *)dict;
+//+ (instancetype)statuseInitDict:(NSDictionary *)dict;
 
 @end
